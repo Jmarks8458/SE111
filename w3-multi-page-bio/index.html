@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 3 Bio</title>
+    <meta name = "author" content = "Jesse Marks">
+    <meta name = "description" content = "Week 3 multi-page demo">
+
+    <!--In documnet styling-->
+    <style>
+
+        div {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        #wrapper {
+            background-color: lightgrey;
+
+        }
+
+        .bg {
+            background-color: darkgrey;
+            color: white;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+<!--Begin Content-->
+    
+
+<div id = "wrapper">
+
+    <!--Header-->
+    <div id = "header" class = "border bg">
+
+        <h1 id = "title" class = "">Jesse Marks</h1>
+        <h2>Bio</h2>
+
+    </div>
+
+
+    <!--Navigation-->
+    <div id = "nav">
+
+        <!--internal page links go to pages within the site-->
+        <!--relative file paths ^ -->
+
+        <a href = "index.html">HOME | </a>
+        <a href = "schools.html">SCHOOLS</a>
+        <a href = "hobbies.html"> | HOBBIES</a>
+        <br>
+        <!--Internal jump links using #fragments bring you to a section of the current page based on #id-->
+        <a href = "#footer">Bottom of Page</a>
+
+    </div>
+
+
+    <!--Content for the bio-->
+    <div id = "content">
+
+        <h2 class = "border">Bio</h2>
+
+        <p>
+            I grew up in Massachusetts in the town of bourne. Bourne is the town situated right on the Cape Cod Canal. <br>
+            I've also got family in Florida as well as Canada. In the past my father used to own a ranch in Colorado. <br>
+            We had alpacas, horses, goats, a donkey, and even an <i>awesome</i> <strong>pig.</strong> She was <b>very</b> friendly and would <br>
+            roll over for belly rubs like a dog. Despite the ranch being in the Colorado desert, it was actually quite nice. <br>
+            With the cleanest, naturally filtered water in the ground pumped by wells, and the most ripe strawberries I've <br>
+            ever had it was surprisingly pleasant for a land of <em>sage and sand</em>.
+       </p>
+
+       <img src="images/pig-trim.PNG" alt="pig eating a cake" width="300">
+    </div>
+
+
+    <!--Footer-->
+    <div id = "footer" class = "border bg">
+
+        <a href = "#header">Back to the top!</a>
+        <br>
+        <img src = "images/w3 check validation - index.PNG" alt = "Validation Screenshot">
+
+    </div>
+
+
+</div>
+
+
+<!--End Content-->
+</body>
+
+</html>

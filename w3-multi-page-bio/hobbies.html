@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 3 Bio</title>
+    <meta name = "author" content = "Jesse Marks">
+    <meta name = "description" content = "Week 3 multi-page demo - Hobbies">
+
+    <!--In documnet styling-->
+    <style>
+
+        div {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        #wrapper {
+            background-color: lightgrey;
+
+        }
+
+        .bg {
+            background-color: darkgrey;
+            color: white;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+<!--Begin Content-->
+    
+
+<div id = "wrapper">
+
+    <!--Header-->
+    <div id = "header" class = "border bg">
+
+        <h1 id = "title" class = "">Jesse Marks</h1>
+        <h2>Hobbies</h2>
+        
+
+    </div>
+
+
+    <!--Navigation-->
+    <div id = "nav">
+
+        <!--internal page links go to pages within the site-->
+        <!--relative file paths ^ -->
+
+        <a href = "index.html">HOME | </a>
+        <a href = "schools.html">SCHOOLS</a>
+        <a href = "hobbies.html"> | HOBBIES</a>
+        <br>
+        <!--Internal jump links using #fragments bring you to a section of the current page based on #id-->
+        <a href = "#footer">Bottom of Page</a>
+
+    </div>
+
+
+    <!--Content-->
+    <div id = "content">
+
+        <h2>Hobbies</h2>
+
+            <!--models-trim.png-->
+            <img src="images/models-trim.PNG" alt="(mostly) painted Warhammer Models" width="300">
+            
+            <ul>
+                <li>Warhammer Tabletop</li>
+                <li>Model Building/Painting</li>
+                <li>Video Games</li>
+                <li>MTG</li>
+            </ul>
+        <p>
+            The most prevalent of my hobbies which is Warhammer manages to manifest itself into really more of two hobbies. <br>
+            Model building being the main one with a huge amount of support from the actual lore behind the models and the 40K universe.<br>
+            40K is a huge universe with so much to cover, so typically I use Lexicanum to help with such a diverse galaxy of stories.<br>
+            Visit Lexicanum <a href="https://wh40k.lexicanum.com/wiki/Main_Page" target="_blank">here</a>! 
+        </p>
+
+    </div>
+
+
+    <!--Footer-->
+    <div id = "footer" class = "border bg">
+
+        <a href = "#header">Back to the top!</a>
+        <br>
+        <img src = "images/w3 vali - hobbies.PNG" alt = "Validation Screenshot">
+
+    </div>
+
+
+</div>
+
+
+<!--End Content-->
+</body>
+
+</html>
