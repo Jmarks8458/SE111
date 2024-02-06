@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <!--Tells the -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Your Name Here">
+    <meta name="author" content="Jesse Marks">
     <meta name="description" content="Default HTML Page for SE 111">
     
     <link type="text/css" rel="stylesheet" href="style.css">
@@ -14,24 +14,143 @@
 </head>
 <body>
     <!--Build your Table and Form here-->
-    
-    <table>
 
+    <h1>TITLE</h1>
+
+    <form method="GET" action="confirm.html">
+        <table>
+        
+        <!--Gives columns headers-->
+        <thead>
+
+            <!--New Row-->
+            <tr>
+                <!--Left Column (Labels)-->
+                <td>
+
+                    <h2>Questions</h2>
+
+                </td>
+
+                <!--Right Column (Inputs)-->
+                <td>
+
+                    <h2>Answers</h2>
+
+                </td>
+            </tr>
+        </thead> <!--End Table Header-->
+        
+        <tbody> <!--Begin Table Body-->
+
+        <!--Creates a border box for a section of the table-->
+        
         <tr>
-
-            <!--Begin First Row-->
             <td>
-                <p> 1 </p>
+                <!--Label for the input box-->
+                <label for="firstname">First Name:</label>
+            </td>
+            <td>
+                <!--The actual input box-->
+                <input type="text" name="firstname" id="firstname" placeholder="name here">
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <label for="lastname">Last Name:</label>
             </td>
 
             <td>
-                <p>2</p>
+                <input type="text" name="lastname" id="lastname" placeholder="last name here">
             </td>
-
-
+        </tr>
+        
+        <!--Numbers!-->
+        <tr>
+            <td>
+                <label for="age">Age:</label>
+            </td>
+            <td>
+                <input type="number" name="age" id="age" minlength="1" max="100">
+            </td>
         </tr>
 
-    </table>
+        <!--Drop down Menus!-->
+        <tr>
+            <td> <!--Left Column-->
+                <label for="favcolor">Favorite Color</label>
+            </td>
+            <td> <!--Right Column-->
+                <select name="favcolor" id="favcolor">
+
+                    <option value="r">Red</option>
+                    <option value="g">Green</option>
+                    <option value="b">Blue</option>
+
+                </select>
+            </td>
+        </tr>
+
+        <!--Radio Buttons!-->
+        <tr>
+            <!--Left Colummn-->
+            <td>
+                <label for="study">Program of Study</label>
+            </td>
+
+            <!--Right Column-->
+            <td>
+                <input type="radio" name="study" id="study" value="SE">Software Engineering
+                <br>
+                <input type="radio" name="study" id="study" value="CS">Cyber Security
+                <br>
+                <input type="radio" name="study" id="study" value="OTHER">Some other thing
+            </td>
+        </tr>
+
+        <!--Check Boxes-->
+        <tr>
+            <td>
+                <!--There is no 'for' value for checkboxes since they will havce their own label-->
+                <label>Select an Option</label>
+            </td>
+
+            <td>
+                <input type="checkbox" name="check1" id="check1" value="number">
+                <label for="check1">1</label>
+
+                <input type="checkbox" name="check2" id="check2" value="number">
+                <label for="check2">2</label>
+                
+                <input type="checkbox" name="check3" id="check3" value="number">
+                <label for="check3">3</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="date">Date:</label>
+            </td>
+
+            <td>
+                <input type="date" name="date" id="date" required>
+            </td>
+        </tr>
+
+
+        <!--Final Submission button-->
+        <tr>
+            <br>
+                <input type="submit" name="submit" id="submit">
+            <br>
+        </tr>
+
+        </tbody> <!--End Table Body-->
+        
+
+        </table> <!--End Table-->
+    </form>
 
 </body>
 </html>
