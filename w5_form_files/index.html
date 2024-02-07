@@ -15,142 +15,200 @@
 <body>
     <!--Build your Table and Form here-->
 
-    <h1>TITLE</h1>
+    <h1>40K Tabletop Planner</h1>
 
-    <form method="GET" action="confirm.html">
+    <form>
         <table>
-        
-        <!--Gives columns headers-->
-        <thead>
+            
+            <!--Begin Table Head-->
+            <thead>
 
-            <!--New Row-->
-            <tr>
-                <!--Left Column (Labels)-->
-                <td>
+                <tr>
 
-                    <h2>Questions</h2>
+                    <td>
+                        <h2>Labels</h2>
+                    </td>
 
-                </td>
+                    <td>
+                        <h2>Form Fields</h2>
+                    </td>
 
-                <!--Right Column (Inputs)-->
-                <td>
+                </tr>
 
-                    <h2>Answers</h2>
+            </thead>
+            <!--End table Head-->
 
-                </td>
-            </tr>
-        </thead> <!--End Table Header-->
-        
-        <tbody> <!--Begin Table Body-->
+            <!--Begin Table Body-->
+            <tbody>
 
-        <!--Creates a border box for a section of the table-->
-        
-        <tr>
-            <td>
-                <!--Label for the input box-->
-                <label for="firstname">First Name:</label>
-            </td>
-            <td>
-                <!--The actual input box-->
-                <input type="text" name="firstname" id="firstname" placeholder="name here">
-            </td>
-        </tr>
-        
-        <tr>
-            <td>
-                <label for="lastname">Last Name:</label>
-            </td>
+                <tr> <!--First Name Text Box-->
+                    <td>
+                        <label for="fname">First Name</label>
+                    </td>
+                    <td>
+                        <input type="text" name="fname" id="fname" placeholder="First Name Here" maxlength="20" required>
+                    </td>
+                </tr>                 
 
-            <td>
-                <input type="text" name="lastname" id="lastname" placeholder="last name here">
-            </td>
-        </tr>
-        
-        <!--Numbers!-->
-        <tr>
-            <td>
-                <label for="age">Age:</label>
-            </td>
-            <td>
-                <input type="number" name="age" id="age" minlength="1" max="100">
-            </td>
-        </tr>
+                <tr> <!--Last Name Text Box-->
+                    <td>
+                        <label for="lname">Last Name</label>
+                    </td>
+                    <td>
+                        <input type="text" name="lname" id="lname" placeholder="last Name Here" maxlength="20" required>
+                    </td>
+                </tr>
 
-        <!--Drop down Menus!-->
-        <tr>
-            <td> <!--Left Column-->
-                <label for="favcolor">Favorite Color</label>
-            </td>
-            <td> <!--Right Column-->
-                <select name="favcolor" id="favcolor">
+                <tr> <!--Army Name Text Box--> 
+                    <td>
+                        <label for="aname">Army Name</label>
+                    </td>
+                    <td>
+                        <input type="text" name="aname" id="aname" placeholder="Army Name Here" maxlength="50" required>
+                    </td>
+                </tr>
 
-                    <option value="r">Red</option>
-                    <option value="g">Green</option>
-                    <option value="b">Blue</option>
+                <tr> <!--Army Point Value-->
+                    <td>
+                        <label for="point">Army Point Value</label>
+                    </td>
+                    <td>
+                        <input type="number" name="point" id="point" placeholder="Total Point Value Here" required>
+                    </td>
+                </tr>
 
-                </select>
-            </td>
-        </tr>
+                <tr> <!--Date and Time Heading2-->
+                    <td>
+                        <h2>Date and Time</h2>
+                    </td>
+                </tr>
 
-        <!--Radio Buttons!-->
-        <tr>
-            <!--Left Colummn-->
-            <td>
-                <label for="study">Program of Study</label>
-            </td>
+                <tr> <!--Date-->
+                    <td>
+                        <label for="date">Requested Date:</label>
+                    </td>
+                    <td>
+                        <input type="date" name="date" id="date" required>
+                    </td>
+                </tr>
 
-            <!--Right Column-->
-            <td>
-                <input type="radio" name="study" id="study" value="SE">Software Engineering
-                <br>
-                <input type="radio" name="study" id="study" value="CS">Cyber Security
-                <br>
-                <input type="radio" name="study" id="study" value="OTHER">Some other thing
-            </td>
-        </tr>
+                <tr> <!--Time-->
+                    <td>
+                        <label for="time">Time Requested</label>
+                    </td>
+                    <td>
+                        <input type="time" name="time" id="time" required>
+                    </td>
+                </tr>
 
-        <!--Check Boxes-->
-        <tr>
-            <td>
-                <!--There is no 'for' value for checkboxes since they will havce their own label-->
-                <label>Select an Option</label>
-            </td>
+                <tr> <!--Number of Guests-->
+                    <td>
+                        <label for="guest">Number of Guests</label>
+                    </td>
+                    <td>
+                        <input type="number" name="guest" id="guest" placeholder="Guest Number Here" required>
+                    </td>
+                </tr>
 
-            <td>
-                <input type="checkbox" name="check1" id="check1" value="number">
-                <label for="check1">1</label>
+                <tr> <!--food Heading2-->
+                    <td>
+                        <h2>Food</h2>
+                    </td>
+                </tr>
 
-                <input type="checkbox" name="check2" id="check2" value="number">
-                <label for="check2">2</label>
-                
-                <input type="checkbox" name="check3" id="check3" value="number">
-                <label for="check3">3</label>
-            </td>
-        </tr>
+                <tr> <!--Drink Size-->
+                    <td>
+                        <label for="size">Size</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="size" id="size1">Small
+                        <br>
+                        <input type="radio" name="size" id="size2">Medium
+                        <br>
+                        <input type="radio" name="size" id="size3">Large
+                    </td>
+                </tr>
 
-        <tr>
-            <td>
-                <label for="date">Date:</label>
-            </td>
+                <tr> <!-- Types of Drinks -->
+                    <td>
+                        <label>Drinks</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" value="coke" id="coke" name="coke">
+                        <label for="coke">Coke</label>
+                        <br>
 
-            <td>
-                <input type="date" name="date" id="date" required>
-            </td>
-        </tr>
+                        <input type="checkbox" value="sprite" id="sprite" name="sprite">
+                        <label for="sprite">Sprite</label>
+                        <br>
 
+                        <input type="checkbox" value="punch" id="punch" name="punch">
+                        <label for="punch">Fruit Punch</label>
+                        <br>
 
-        <!--Final Submission button-->
-        <tr>
-            <br>
-                <input type="submit" name="submit" id="submit">
-            <br>
-        </tr>
+                        <input type="checkbox" value="lemonade" id="lemonade" name="lemonade">
+                        <label for="lemonade">Lemonade</label>
+                        <br>
 
-        </tbody> <!--End Table Body-->
-        
+                    </td>
+                </tr>
+
+                <tr> <!--Cake selection-->
+                    <td>
+                        <label>Cake</label>
+                    </td>
+                    <td>
+                        <select name="cake" id="cake">
+
+                            <option value="chocolate">Chocolate</option>
+                            <option value="vanilla">Vanilla</option>
+                            <option value="ice">Ice Cream</option>
+
+                        </select>
+                    </td>
+                </tr>
+
+                <tr> <!--Decoration Heading2-->
+                    <td>
+                        <h2>Decorations</h2>
+                    </td>
+                </tr>
+
+                <tr> <!--Color Pick-->
+                    <td>
+                        <label for="color">Team Color</label>
+                    </td>
+                    <td>
+                        <input type="color" name="color" id="color">
+                    </td>
+                </tr>
+
+                <tr> <!--Additional Comments-->
+                    <td>
+                        <label for="comment"></label>Additional Comments
+                    </td>
+                    <td>
+                        <input type="textarea" name="comment" id="comment" value="comment">
+                    </td>
+                </tr>
+
+                <tr> <!--Submittion button-->
+                    <td>
+                        
+                    </td>
+                    <td>
+                        <input type="submit">
+                    </td>
+                </tr>
+
+            </tbody>
+            <!--End Table Body-->
 
         </table> <!--End Table-->
-    </form>
+    </form> <!--End Form-->
 
 </body>
+<footer>
+    <img src="Images/Vali.PNG">
+</footer>
 </html>
