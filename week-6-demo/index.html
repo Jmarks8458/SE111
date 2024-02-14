@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6 Work Demo</title>
+</head>
+<body>
+    <h1> Week 6 Intro to Javascript</h1>
+
+    <!--In Document JavaScript-->
+    <script>
+        
+        // Immediate User Input required for math
+        var hourPay = prompt(`What is your hourly pay?`)
+        console.log(`hourPay: ${hourPay}`)
+
+        var workHour = prompt(`How many hours do you work in two weeks?`)
+        console.log(`workHour: ${workHour}`)
+
+        // NOTE: I think I needed to cast these to numbers but it didn't like me
+        // trying to do that so I tried it without that and it just works I guess...
+
+
+        // Determining gross pay from user input
+        var grossPay = workHour * hourPay
+        console.log(`grossPay: ${grossPay}`)
+
+        // Applying a tax of 20% to the gross pay
+        var samShare = grossPay * 0.2
+        console.log(`samShare: ${samShare}`)
+
+        // actual pay after IRS theft
+        var netPay = grossPay - samShare
+        console.log(`netPay: ${netPay}`)
+
+        // Final outputs to the user
+        alert(`Your gross pay is: ${grossPay.toFixed(2)}`)
+        alert(`Uncle Sam's share of that is: ${samShare.toFixed(2)}`)
+        alert(`Your net pay in that case is: ${netPay.toFixed(2)}`)
+
+    </script>
+</body>
+</html>
