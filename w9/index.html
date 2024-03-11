@@ -1,59 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="utf-8">
+	<title>Week 2 Files</title>
+	<style type="text/css">
+		.border {
+			border: 1px solid black;
+		}
+	</style>
 </head>
+
+
 <body id="body">
-    
-    <h1>Week 9, Creating Elements</h1>
+
+	<h1>Week 9, Creating Elements Assignment</h1>
 
 
 
-    <script>
-        var people =[
+	<script>
+		var people = [
 
-            {first:"Malcador", last:"The Sigalite", credit:"Big boy spyker"},
-            {first:"Caiaphus",last:"Cain",credit:"He can never get away"},
-            {first:"Alphareus",last:"The Small", credit:"I am Alphareus"},
-            {first:"Robute", last:"Gulliman", credit:"thinking about everything"}
+			{ first: "Jason", last: "Vorhees", credit: "Friday the 13th" },
+			{ first: "Freddy", last: "Krueger", credit: "A Nightmare on Elm Street" },
+			{ first: "Roger", last: "Rabbit", credit: "Who Framed Roger Rabbit" },
+			{ first: "Kevin", last: "McCallister", credit: "Home Alone" },
+			{ first: "Godzilla", last: "King of The Monsters", credit: "Godzilla" },
+			{ first: "Buzz", last: "Lightyear", credit: "Toy Story" },
+			{ first: "Marion", last: "Cobretti", credit: "Cobra" }
 
-        ]
-        console.log(people)
+		]
+		console.log(people)
 
-        // Select main element
-        var body = document.getElementById(`body`)
-        console.log(body)
-        console.dir(body) // DIR allows for a more detailed look at the peropeties of the specified object
+		// Select main element
+		var body = document.getElementById(`body`)
+		console.log(body)
+		console.dir(body) // DIR allows for a more detailed look at the peropeties of the specified object
 
 
-        for (let i = 0; i < people.length; i++)
-        {
-            var tempDiv = document.createElement(`div`)
+		for (let i = 0; i < people.length; i++) {
+			var tempDiv = document.createElement(`div`)
 
-            // Assign a unique ID to the div
-            tempDiv.setAttribute(`id`, people[i].first)
-            tempDiv.setAttribute(`class`, `red`)
-            
-            for (let key in people[i])
-            {
-                var p = document.createElement(`p`)
-                var text = document.createTextNode(people[i][key]) // the first denoted property in people is the main array while the second refers specifically to each value inside the associative array inside that other array 
-                
-                // Add the text to the p
-                p.appendChild(text)
-                tempDiv.appendChild(p)
-                //                  ^ ends the p tag, essentially </p>
+			// Assign a unique ID to the div
+			tempDiv.setAttribute(`id`, people[i].first)
+			tempDiv.setAttribute(`class`, `border`)
+			
 
-            }
+			for (let key in people[i]) {
+				var p = document.createElement(`p`)
+				var text = document.createTextNode(people[i][key]) // the first denoted property in people is the main array while the second refers specifically to each value inside the associative array inside that other array 
 
-            // add the temp div to the body element
-            body.appendChild(tempDiv)
-        }
+				// Add the text to the p
+				p.appendChild(text)
+				tempDiv.appendChild(p)
+				//                  ^ ends the p tag, essentially </p>
 
-    </script>
+			}
+
+			// add the temp div to the body element
+			body.appendChild(tempDiv)
+		}
+
+	</script>
 
 </body>
+
 </html>
